@@ -7,7 +7,6 @@ import colorama
 import os
 import requests
 import re
-import unicodedata
 
 from tqdm import tqdm
 from urllib.parse import unquote

@@ -7,7 +7,6 @@ import colorama
 import downloader
 import numpy as np
 import requests
-from base64 import urlsafe_b64encode
 from bs4 import BeautifulSoup
 from optparse import OptionParser
 
@@ -28,7 +27,6 @@ def searchForFormat(songListTable):
 
   # conversion with numpy just for this option
   formatArray = np.array(formatArray)
-
 
   try:
     formatArray = formatArray[start+1:end-1].tolist()
